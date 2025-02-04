@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header data-testid="gameInstructions">
+        <p>Welcome Player.</p>
+        <p>Guess The correct color in the box.</p>
+        <p>by selecting a Color Button</p>
+        <button class="start-game-btn">Start Game</button>
+      </header>
+
+      <main class="hidden">
+        <p class="correct" data-testid="gameStatus">
+          Correct Guess <span>🎉</span>
+        </p>
+        <div class="overlay hidden"></div>
+
+        <div class="game-operations">
+          <p>Score: <span class="score" data-testid="score">0</span></p>
+          <p>Highscore: <span class="high-score">0</span></p>
+          <button class="reset-btn" data-testid="reset">Reset</button>
+        </div>
+        <div class="guess-box" data-testid="colorBox">
+          <div class="game-over-container hidden">
+            <h1 class="game-over">Game Over</h1>
+            <button class="game-over-btn">Play again</button>
+          </div>
+          <p>?</p>
+        </div>
+        <div class="options" data-testid="colorOptions"></div>
+      </main>
+      <footer>
+        <p>Created by</p>
+        <p>Dev. Udoka Ubah</p>
+      </footer>
+    </div>
+  </body>
+</html>
